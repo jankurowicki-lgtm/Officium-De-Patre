@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officium de Deo Patre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .versicle { color: #cc0000; font-weight: bold; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased pb-20">
+    <div class="max-w-md mx-auto bg-white min-h-screen shadow-lg">
+        <header class="text-center pt-8 pb-4 px-4 border-b border-gray-100">
+            <p class="text-xs text-gray-500 uppercase tracking-widest mb-2">Breviarium &middot; Liturgia Horarum</p>
+            <h1 class="text-2xl font-bold mb-1">Officium de Deo Patre</h1>
+            <h2 class="text-sm text-gray-500">Małe Oficjum o Bogu Ojcu</h2>
+        </header>
+        <nav class="flex overflow-x-auto hide-scrollbar px-4 py-4 space-x-2 border-b border-gray-100">
+            <button class="flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-sm text-center">
+                <div class="font-semibold">Maitines</div><div class="text-xs text-gray-500">Ad Matutínum</div>
+            </button>
+            <button class="flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-sm text-center">
+                <div class="font-semibold">Prima</div><div class="text-xs text-gray-500">Ad Primam</div>
+            </button>
+            <button class="flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-sm text-center">
+                <div class="font-semibold">Tercia</div><div class="text-xs text-
